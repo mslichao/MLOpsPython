@@ -32,6 +32,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.externals import joblib
 import sys
+import sklearn
 import numpy as np
 
 parser = argparse.ArgumentParser("train")
@@ -53,7 +54,7 @@ print("Argument 1: %s" % args.build_id)
 print("Argument 2: %s" % args.model_name)
 print(sys.version)
 print(np.__version__)
-print(sklearn__version__)
+print(sklearn.__version__)
 
 model_name = args.model_name
 build_id = args.build_id
