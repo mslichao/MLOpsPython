@@ -33,8 +33,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.externals import joblib
 import numpy as np
 
-import subprocess
-subprocess.run('conda env export')
+import sys
+print(sys.version)
+print(np.__version__)
+print(sklearn__version__)
 
 parser = argparse.ArgumentParser("train")
 parser.add_argument(
