@@ -31,12 +31,8 @@ from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.externals import joblib
-import numpy as np
-
 import sys
-print(sys.version)
-print(np.__version__)
-print(sklearn__version__)
+import numpy as np
 
 parser = argparse.ArgumentParser("train")
 parser.add_argument(
@@ -55,6 +51,9 @@ args = parser.parse_args()
 
 print("Argument 1: %s" % args.build_id)
 print("Argument 2: %s" % args.model_name)
+print(sys.version)
+print(np.__version__)
+print(sklearn__version__)
 
 model_name = args.model_name
 build_id = args.build_id
