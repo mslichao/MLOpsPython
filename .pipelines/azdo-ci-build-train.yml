@@ -26,7 +26,7 @@ stages:
     container: mcr.microsoft.com/mlops/python:latest
     timeoutInMinutes: 0
     steps:
-    - template: azdo-base-pipeline.yml
+    # - template: azdo-base-pipeline.yml
     - script: |
         # Invoke the Python building and publishing a training pipeline
         python3 $(Build.SourcesDirectory)/ml_service/pipelines/${{ variables.BUILD_TRAIN_SCRIPT }}
